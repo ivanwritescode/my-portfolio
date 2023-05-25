@@ -2,11 +2,12 @@ body {
     font-family: "Open Sans", sans-serif;
     color: #fff;
     position: relative;
+    background: transparent;
 
     &::before {
         content: "";
         position: fixed;
-        background: #040404 url();
+        background: #040404 url(../assets/2020619.jpg);
         background-size: cover;
         left: 0;
         right: 0;
@@ -14,4 +15,9 @@ body {
         height: 100vh;
         z-index: -1; 
     }
+}
+
+a {
+    color: #18d26e; 
+    text-decoration: none;
 }
