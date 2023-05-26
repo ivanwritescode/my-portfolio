@@ -11,7 +11,7 @@ function App() {
       <header id="header">
         <Container>
           <h1><a href='/my-portfolio/'>Ivan Mejico</a></h1>
-          <h2>I'm a passionate <span>web developer</span></h2>
+          <h2>I'm a Computer Engineering graduate passionate about <span>web development</span>.</h2>
           <div className="nav-container">
             <Nav id="navbar" className="navbar">
                 <Nav.Item><Nav.Link>Home</Nav.Link></Nav.Item>
