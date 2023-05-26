@@ -51,16 +51,10 @@
 .navbar {
     padding: 0;
     margin-top: 35px;
-    
-    ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        list-style: none;
+    justify-content: left;
 
-        li+li {
-            margin-left: 30px
-        }
+    div+div {
+        margin-left: 30px
     }
 
     a {
