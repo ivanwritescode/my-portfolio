@@ -12,14 +12,16 @@ function App() {
         <Container>
           <h1><a href='/my-portfolio/'>Ivan Mejico</a></h1>
           <h2>I'm a passionate <span>web developer</span></h2>
-          <Nav id="navbar" className="navbar">
-            <Nav.Item><Nav.Link>Home</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link>About</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link>Resume</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link>Services</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link>Portfolio</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link>Contact</Nav.Link></Nav.Item>
-          </Nav>
+          <div className="nav-container">
+            <Nav id="navbar" className="navbar">
+                <Nav.Item><Nav.Link>Home</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link>About</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link>Resume</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link>Services</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link>Portfolio</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link>Contact</Nav.Link></Nav.Item>
+            </Nav>
+          </div>
           <div className="social-links">
             <Nav.Link href="https://twitter.com/ivanwritescode" target="_blank"><Twitter /></Nav.Link>
             <Nav.Link href="https://github.com/ivanwritescode" target="_blank"><Github /></Nav.Link>
