@@ -5,6 +5,7 @@ import { Github, Linkedin, Twitter } from "react-bootstrap-icons";
 import { TryHackMeIcon, CodewarsIcon } from './Components/icons/Icons';
 
 function App() {
+  const disabledLinkStyles = { cursor: 'not-allowed', PointerEvent: 'none' }
 
   return (
     <>
@@ -14,12 +15,12 @@ function App() {
           <h2>I'm a Computer Engineering graduate passionate about <span>web development</span>.</h2>
           <div className="nav-container">
             <Nav id="navbar" className="navbar">
-                <Nav.Item><Nav.Link>Home</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link>About</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link>Resume</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link>Services</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link>Portfolio</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link>Contact</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="#" style={ disabledLinkStyles }>About</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="#" style={ disabledLinkStyles }>Resume</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="#" style={ disabledLinkStyles }>Services</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="#" style={ disabledLinkStyles }>Portfolio</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="#" style={ disabledLinkStyles }>Contact</Nav.Link></Nav.Item>
             </Nav>
           </div>
           <div className="social-links">
