@@ -37,6 +37,16 @@ function App() {
           </div>
         </Container>
       </header>
+      <div className='credits'>
+        <figure>
+          <blockquote className='blockquote'>
+            <p>The road to success is always under construction</p>
+          </blockquote>
+          <figcaption className='blockquote-footer'>
+              <cite title="Source Title">Lily Tomlin</cite>
+          </figcaption>
+        </figure>
+      </div>
     </>
   )
 }
