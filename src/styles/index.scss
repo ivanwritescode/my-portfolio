@@ -1,5 +1,9 @@
+$link-color: #18d26e;
+$body-color: #040404;
+
 body {
     font-family: "Open Sans", sans-serif;
+    background-color: $body-color;
     color: #fff;
     position: relative;
     background: transparent;
@@ -7,7 +11,7 @@ body {
     &::before {
         content: "";
         position: fixed;
-        background: #040404 url(../assets/2020619.jpg);
+        background: $body-color url(../assets/2020619.jpg);
         background-size: cover;
         left: 0;
         right: 0;
@@ -18,10 +22,9 @@ body {
 }
 
 a {
-    color: #18d26e; 
+    color: $link-color; 
     text-decoration: none;
 }
-
 
 @media (min-width: 1024px) {
     body::before {

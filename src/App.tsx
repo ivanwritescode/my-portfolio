@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/App.scss'
-import { Container, Nav } from 'react-bootstrap'
 import { Github, Linkedin, Twitter } from "react-bootstrap-icons";
 import { TryHackMeIcon, CodewarsIcon } from './Components/icons/Icons';
 
@@ -15,35 +14,39 @@ function App() {
   return (
     <>
       <header id="header">
-        <Container>
+        <div className="container">
           <h1><a href='/my-portfolio/'>Ivan Mejico</a></h1>
           <h2>I'm a Computer Engineering graduate passionate about <span>web development</span>.</h2>
-          <div className="nav-container">
-            <Nav id="navbar" className="navbar">
-                <Nav.Item><Nav.Link href="#header">Home</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="#about" style={ disabledLinkStyles }>About</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="#resume" style={ disabledLinkStyles }>Resume</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="#services" style={ disabledLinkStyles }>Services</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="#portfolio" style={ disabledLinkStyles }>Portfolio</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="#contact" style={ disabledLinkStyles }>Contact</Nav.Link></Nav.Item>
-            </Nav>
-          </div>
+
+          <nav id="navbar" className="navbar">
+            <ul>
+              <li><a className="nav-link active" href="#header">Home</a></li>
+              <li><a className="nav-link" style={disabledLinkStyles} href="#about">About</a></li>
+              <li><a className="nav-link" style={disabledLinkStyles} href="#resume">Resume</a></li>
+              <li><a className="nav-link" style={disabledLinkStyles} href="#services">Services</a></li>
+              <li><a className="nav-link" style={disabledLinkStyles} href="#portfolio">Portfolio</a></li>
+              <li><a className="nav-link" style={disabledLinkStyles} href="#contact">Contact</a></li>
+            </ul>
+            <i className="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+
           <div className="social-links">
-            <Nav.Link href="https://twitter.com/ivanwritescode" target="_blank"><Twitter /></Nav.Link>
-            <Nav.Link href="https://github.com/ivanwritescode" target="_blank"><Github /></Nav.Link>
-            <Nav.Link href="https://linkedin.com/in/ivan-mejico" target="_blank"><Linkedin /></Nav.Link>
-            <Nav.Link href="https://tryhackme.com/p/Nemos" target="_blank"><TryHackMeIcon /></Nav.Link>
-            <Nav.Link href="https://www.codewars.com/users/ivanwritescode" target="_blank"><CodewarsIcon /></Nav.Link>
+            <a href="https://twitter.com/ivanwritescode" target="_blank"><Twitter /></a>
+            <a href="https://github.com/ivanwritescode" target="_blank"><Github /></a>
+            <a href="https://linkedin.com/in/ivan-mejico" target="_blank"><Linkedin /></a>
+            <a href="https://tryhackme.com/p/Nemos" target="_blank"><TryHackMeIcon /></a>
+            <a href="https://www.codewars.com/users/ivanwritescode" target="_blank"><CodewarsIcon /></a>
           </div>
-        </Container>
+        </div>
       </header>
+
       <div className='credits'>
         <figure>
           <blockquote className='blockquote'>
             <p>The road to success is always under construction</p>
           </blockquote>
           <figcaption className='blockquote-footer'>
-              <cite title="Source Title">Lily Tomlin</cite>
+            <cite title="Source Title">Lily Tomlin</cite>
           </figcaption>
         </figure>
       </div>
