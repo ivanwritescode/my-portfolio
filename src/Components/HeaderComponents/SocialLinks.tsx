@@ -1,4 +1,4 @@
-import { TryHackMeIcon, CodewarsIcon } from './icons/Icons';
+import { TryHackMeIcon, CodewarsIcon } from '../icons/Icons';
 
 const SocialLinks = () => {
     return (

@@ -1,5 +1,5 @@
-import NavBar from "./NavBar";
-import SocialLinks from "./SocialLinks";
+import NavBar from "./HeaderComponents/NavBar";
+import SocialLinks from "./HeaderComponents/SocialLinks";
 
 const Header = () => {
     return (
