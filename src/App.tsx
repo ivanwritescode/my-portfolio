@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/App.scss'
-import { Github, Linkedin, Twitter } from "react-bootstrap-icons";
 import { TryHackMeIcon, CodewarsIcon } from './Components/icons/Icons';
 
 function App() {
@@ -31,9 +30,9 @@ function App() {
           </nav>
 
           <div className="social-links">
-            <a href="https://twitter.com/ivanwritescode" target="_blank"><Twitter /></a>
-            <a href="https://github.com/ivanwritescode" target="_blank"><Github /></a>
-            <a href="https://linkedin.com/in/ivan-mejico" target="_blank"><Linkedin /></a>
+            <a href="https://twitter.com/ivanwritescode" target="_blank"></a>
+            <a href="https://github.com/ivanwritescode" target="_blank"></a>
+            <a href="https://linkedin.com/in/ivan-mejico" target="_blank"></a>
             <a href="https://tryhackme.com/p/Nemos" target="_blank"><TryHackMeIcon /></a>
             <a href="https://www.codewars.com/users/ivanwritescode" target="_blank"><CodewarsIcon /></a>
           </div>
