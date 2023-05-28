@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.min.css' 
 import './styles/App.scss'
 import { TryHackMeIcon, CodewarsIcon } from './Components/icons/Icons';
 
