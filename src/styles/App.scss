@@ -154,6 +154,45 @@
     top: 15px
 }
 
+.navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    transition: 0.3s;
+    z-index: 999;
+    margin-top: 0;
+
+    ul {
+        display: block !important;
+        position: absolute;
+        top: 55px;
+        right: 15px;
+        bottom: 45px;
+        left: 15px;
+        padding: 10px 0;
+        overflow-y: auto;
+        transition: 0.3s;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    li {
+        padding: 12px 20px;
+    }
+
+    li+li {
+        margin: 0;
+    }
+
+    a, a:focus {
+        font-size: 16px;
+        position: relative;
+    }
+}
+
 @media (max-width: 992px) {
     #header{
         h1 {

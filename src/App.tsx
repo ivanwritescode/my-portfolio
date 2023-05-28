@@ -2,8 +2,22 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.min.css' 
 import './styles/App.scss'
 import { TryHackMeIcon, CodewarsIcon } from './Components/icons/Icons';
+import { useState } from 'react';
 
 function App() {
+  const [isToggled, setIsToggled] = useState<boolean>(false)
+
+  const onToggle = (): void => {
+    setIsToggled(prevState => !prevState)
+  }
+
+  const getNavbarClass = (isToggled: boolean): string =>
+    isToggled ? 'navbar navbar-mobile' : 'navbar'
+
+  const getToggleClass = (isToggled: boolean): string =>
+    isToggled ? 'bi bi-x mobile-nav-toggle' : 'bi bi-list mobile-nav-toggle'
+  
+
   const disabledLinkStyles: React.CSSProperties = {
     pointerEvents: "none",
     cursor: "not-allowed",
@@ -18,7 +32,7 @@ function App() {
           <h1><a href='/my-portfolio/'>Ivan Mejico</a></h1>
           <h2>I'm a Computer Engineering graduate passionate about <span>web development</span>.</h2>
 
-          <nav id="navbar" className="navbar">
+          <nav id="navbar" className={getNavbarClass(isToggled)}>
             <ul>
               <li><a className="nav-link active" href="#header">Home</a></li>
               <li><a className="nav-link" style={disabledLinkStyles} href="#about">About</a></li>
@@ -27,7 +41,7 @@ function App() {
               <li><a className="nav-link" style={disabledLinkStyles} href="#portfolio">Portfolio</a></li>
               <li><a className="nav-link" style={disabledLinkStyles} href="#contact">Contact</a></li>
             </ul>
-            <i className="bi bi-list mobile-nav-toggle"></i>
+            <i className={getToggleClass(isToggled)} onClick={onToggle}></i>
           </nav>
 
           <div className="social-links">
