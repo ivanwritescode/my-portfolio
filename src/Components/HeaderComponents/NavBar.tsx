@@ -16,7 +16,7 @@ const NavBar = ({ activeItem, items, onItemSelect }: INavbarProps) => {
 
     const handleItemSelect = (itemLabel: string): void => {
         onItemSelect(itemLabel);
-        onToggle();
+        // onToggle();
     }
 
     const getNavbarClass = (isToggled: boolean): string =>
