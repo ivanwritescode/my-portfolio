@@ -21,16 +21,16 @@ const NavBar = ({ activeItem, items, onItemSelect }: INavbarProps) => {
         isToggled ? 'bi bi-x mobile-nav-toggle' : 'bi bi-list mobile-nav-toggle'
 
     return (
-        <nav id="navbar" className={getNavbarClass(isToggled)}>
+        <nav id="navbar" className={ getNavbarClass(isToggled) }>
             <ul>
                 {items.map((item) =>
                     <NavLink
-                        key={item.label}
-                        activeItem={activeItem}
-                        item={item}
-                        onItemSelect={onItemSelect} />)}
+                        key={ item.label }
+                        activeItem={ activeItem }
+                        item={ item }
+                        onItemSelect={ onItemSelect } />)}
             </ul>
-            <i className={getToggleClass(isToggled)} onClick={onToggle}></i>
+            <i className={ getToggleClass( isToggled) } onClick={ onToggle }></i>
         </nav>
     )
 }

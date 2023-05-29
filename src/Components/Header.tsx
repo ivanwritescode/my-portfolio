@@ -28,9 +28,9 @@ const Header = () => {
                     <h1><a href='/my-portfolio/'>Ivan Mejico</a></h1>
                     <h2>I'm a Computer Engineering graduate passionate about <span>web development</span>.</h2>
                     <NavBar
-                        activeItem={activeItem}
-                        items={navbarItems}
-                        onItemSelect={handleNavbarClick} />
+                        activeItem={ activeItem }
+                        items={ navbarItems }
+                        onItemSelect={ handleNavbarClick } />
                     <SocialLinks />
                 </div>
             </header>
