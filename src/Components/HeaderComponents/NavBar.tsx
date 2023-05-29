@@ -11,12 +11,13 @@ interface INavbarProps {
 const NavBar = ({ activeItem, items, onItemSelect }: INavbarProps) => {
     const [isToggled, setIsToggled] = useState<boolean>(false);
 
-    const onToggle = (): void =>
-        setIsToggled(prevState => !prevState)
+    const onToggle = (isOn?: boolean): void =>
+        setIsToggled((prevState) =>
+            (isOn !== undefined ? isOn : !prevState))
 
     const handleItemSelect = (itemLabel: string): void => {
         onItemSelect(itemLabel);
-        // onToggle();
+        onToggle(false);
     }
 
     const getNavbarClass = (isToggled: boolean): string =>
@@ -35,7 +36,7 @@ const NavBar = ({ activeItem, items, onItemSelect }: INavbarProps) => {
                         item={ item }
                         onClick={ handleItemSelect } />)}
             </ul>
-            <i className={ getToggleClass( isToggled) } onClick={ onToggle }></i>
+            <i className={ getToggleClass( isToggled) } onClick={ () => onToggle() }></i>
         </nav>
     )
 }
