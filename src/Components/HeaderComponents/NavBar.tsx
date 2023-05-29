@@ -14,6 +14,11 @@ const NavBar = ({ activeItem, items, onItemSelect }: INavbarProps) => {
     const onToggle = (): void =>
         setIsToggled(prevState => !prevState)
 
+    const handleItemSelect = (itemLabel: string): void => {
+        onItemSelect(itemLabel);
+        onToggle();
+    }
+
     const getNavbarClass = (isToggled: boolean): string =>
         isToggled ? 'navbar navbar-mobile' : 'navbar'
 
@@ -28,7 +33,7 @@ const NavBar = ({ activeItem, items, onItemSelect }: INavbarProps) => {
                         key={ item.label }
                         activeItem={ activeItem }
                         item={ item }
-                        onItemSelect={ onItemSelect } />)}
+                        onClick={ handleItemSelect } />)}
             </ul>
             <i className={ getToggleClass( isToggled) } onClick={ onToggle }></i>
         </nav>

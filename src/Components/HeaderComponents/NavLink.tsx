@@ -3,10 +3,10 @@ import { INavbarItem } from "../../common/interfaces";
 interface INavLinkProps {
     activeItem: string,
     item: INavbarItem,
-    onItemSelect: (arg: string) => void 
+    onClick: (arg: string) => void 
 }
 
-const NavLink = ({ activeItem, item, onItemSelect }: INavLinkProps) => {
+const NavLink = ({ activeItem, item, onClick }: INavLinkProps) => {
     const disabledLinkStyles: React.CSSProperties = {
         pointerEvents: "none",
         cursor: "not-allowed",
@@ -22,7 +22,7 @@ const NavLink = ({ activeItem, item, onItemSelect }: INavLinkProps) => {
     }
 
     return (
-        <li onClick={ () => onItemSelect(item.label) }>
+        <li onClick={ () => onClick(item.label) }>
             <a className={ getLinkClass(item.label) }
                 style={ item.disabled ? disabledLinkStyles : {} }
                 href={ item.link }>{ item.label }</a>
