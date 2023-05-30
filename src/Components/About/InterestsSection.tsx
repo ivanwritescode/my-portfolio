@@ -14,13 +14,12 @@ const interests = [
 const InterestsSection = () => {
     const getClassName = (i: number) => {
         let className = "col-lg-3 col-md-4";
-        if(i === 3) {
-            className = `${className} mt-4 mt-lg-0`
-        } else if (i>0 && i<3) {
-            className = `${className} mt-4 mt-md-0`
-        } else if (i>3) {
-            className = `${className} mt-4`
-        } 
+        if(i === 3)
+            className = `${className} mt-4 mt-lg-0`;
+        else if (i>0 && i<3)
+            className = `${className} mt-4 mt-md-0`;
+        else if (i>3)
+            className = `${className} mt-4`;
         return className;
     }
 
