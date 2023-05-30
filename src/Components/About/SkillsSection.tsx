@@ -1,4 +1,5 @@
 import { ReactNode } from "react"
+import { skills } from "../../util/constants";
 
 interface IColumnWrapperProps {
     children: ReactNode;
@@ -12,25 +13,7 @@ const ColumnWrapper = (props: IColumnWrapperProps) => {
     )
 }
 
-
 const SkillsSection = () => {
-    const skills = [
-        { name: "GitHub and Git Version Control", proficiency: 60 },
-        { name: "HTML, CSS, and JavaScript", proficiency: 60 },
-        { name: "CSS Preprocessors (SASS/SCSS)", proficiency: 40 },
-        { name: "Bootstrap", proficiency: 40 },
-        { name: "Material-UI", proficiency: 20 },
-        { name: "React and Redux", proficiency: 40 },
-        { name: "AJAX, socket.io, async/await, and axios", proficiency: 40 },
-        { name: "Web Security", proficiency: 40 },
-        { name: "PHP, MySQL, Apache backend", proficiency: 40 },
-        { name: "Github Actions CI/CD", proficiency: 40 },
-        { name: "npm, webpack, and babel", proficiency: 20 },
-        { name: "Photoshop and Adobe Illustrator", proficiency: 20 },
-        { name: "GitLab", proficiency: 10 },
-        { name: "TeamCity CI/CD", proficiency: 10 },
-    ] 
-
     return (
         <div className="skills container">
             <div className="section-title">

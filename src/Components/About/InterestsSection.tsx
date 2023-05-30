@@ -1,15 +1,6 @@
 import 'remixicon/fonts/remixicon.css'
+import { interests } from '../../util/constants'
 
-const interests = [
-    { name: "Open-Source", icon: <i className="ri-git-branch-line" style={{ color: "#9897df" }}></i> },
-    { name: "Internet of Things", icon: <i className="ri-home-wifi-line" style={{ color: "#af4343" }}></i> },
-    { name: "Cybersecurity", icon: <i className="ri-fingerprint-line" style={{ color: "#29cc61" }}></i> },
-    { name: "Security CTF", icon: <i className="ri-flag-line" style={{ color: "#ff1f29" }}></i> },
-    { name: "DevOps", icon: <i className="ri-server-line" style={{ color: "#4233ff" }}></i> },
-    { name: "Digital Art", icon: <i className="ri-palette-line" style={{ color: "#b20969" }}></i> },
-    { name: "World History", icon: <i className="ri-ancient-gate-fill" style={{ color: "#e3d312" }}></i> },
-    { name: "Space", icon: <i className="ri-planet-line" style={{ color: "#3163cc" }}></i> },
-]
 
 const InterestsSection = () => {
     const getClassName = (i: number) => {
