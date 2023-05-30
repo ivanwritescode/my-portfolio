@@ -10,7 +10,7 @@ const Traits = () => {
         const className = "col-lg-3 col-md-6 mt-5";
         return i<=1
             ? `${className} mt-md-0`
-            : `${className} mt-lg-0`;
+            : i>3 ? className : `${className} mt-lg-0`;
     }
     return (
         <div className="traits container">
