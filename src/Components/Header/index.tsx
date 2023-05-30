@@ -1,11 +1,13 @@
-import { useState } from "react";
 import Credits from "./Credits";
 import NavBar from "./NavBar";
 import SocialLinks from "./SocialLinks";
 
-const Header = () => {
-    const [activeItem, setActiveItem] = useState<string>('Home');
+interface IHeaderProps {
+    activeItem: string;
+    handleClick: (arg: string) => void;
+}
 
+const Header = ({activeItem, handleClick }: IHeaderProps) => {
     const navbarItems = [
         { label: 'Home', link: '#header', disabled: false },
         { label: 'About', link: '#about', disabled: false },
@@ -15,8 +17,6 @@ const Header = () => {
         { label: 'Contact', link: '#contact', disabled: false },
     ];
 
-    const handleNavbarClick = (item:string): void =>
-        setActiveItem(item);
 
     const getHeaderClass = (): string =>
         activeItem === 'Home'? '' : 'header-top'
@@ -30,7 +30,7 @@ const Header = () => {
                     <NavBar
                         activeItem={ activeItem }
                         items={ navbarItems }
-                        onItemSelect={ handleNavbarClick } />
+                        onItemSelect={ handleClick } />
                     <SocialLinks />
                 </div>
             </header>
