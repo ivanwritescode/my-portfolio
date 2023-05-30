@@ -5,6 +5,7 @@ import './styles/App.scss'
 import Header from './Components/Header'
 import About from './Components/About'
 import { useState } from 'react'
+import UnderDevelopment from './Components/UnderDevelopment'
 
 function App() {
   const [activeItem, setActiveItem] = useState<string>('Home');
@@ -16,6 +17,10 @@ function App() {
     <>
       <Header activeItem={ activeItem } handleClick={ handleHeaderClick } />
       { activeItem == "About" && <About /> } 
+      { activeItem == "Resume" && <UnderDevelopment /> } 
+      { activeItem == "Services" && <UnderDevelopment /> } 
+      { activeItem == "Portfolio" && <UnderDevelopment /> } 
+      { activeItem == "Contact" && <UnderDevelopment /> } 
     </>
   )
 }
