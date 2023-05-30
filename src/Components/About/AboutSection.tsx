@@ -30,7 +30,7 @@ const AboutSection = () => {
                             <ul>
                                 <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>27</span></li>
                                 <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BS Computer Engineering</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ivan.dev@gmail.com</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ivanmejico.dev@gmail.com</span></li>
                             </ul>
                         </div>
                     </div>
