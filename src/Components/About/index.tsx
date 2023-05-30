@@ -1,6 +1,7 @@
 import TraitsSection from "./TraitsSection";
 import AboutSection from "./AboutSection";
 import SkillsSection from "./SkillsSection";
+import InterestsSection from "./InterestsSection";
 
 const About = () => {
     return (
@@ -8,6 +9,7 @@ const About = () => {
             <AboutSection />
             <TraitsSection />
             <SkillsSection />
+            <InterestsSection />
         </section>
     )
 }
