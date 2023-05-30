@@ -38,7 +38,7 @@ const SkillsSection = () => {
             </div>
             <div className="row skills-content">
                 { skills.map((skill) => 
-                    <ColumnWrapper>
+                    <ColumnWrapper key={ skill.name }>
                         <div className="progress">
                             <span className="skill">{skill.name} <i className="val">{skill.proficiency}%</i></span>
                             <div className="progress-bar-wrap">

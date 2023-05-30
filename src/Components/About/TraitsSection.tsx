@@ -5,11 +5,18 @@ const Traits = () => {
         {name: "Analytical", icon: <i className="bi bi-pie-chart"></i>},
         {name: "Organized", icon: <i className="bi bi-clock"></i>},
     ]
+
+    const getClassName = (i: number) => {
+        const className = "col-lg-3 col-md-6 mt-5";
+        return i<=1
+            ? `${className} mt-md-0`
+            : `${className} mt-lg-0`;
+    }
     return (
         <div className="traits container">
             <div className="row">
-              { developerTraits.map((trait) =>
-                <div className="col-lg-3 col-md-6 mt-5">
+              { developerTraits.map((trait, i) =>
+                <div key={ trait.name }className={ getClassName(i) }>
                     <div className="trait-box">
                         { trait.icon }
                         <span>{ trait.name }</span>
