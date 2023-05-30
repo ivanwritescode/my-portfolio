@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Credits from "./HeaderComponents/Credits";
-import NavBar from "./HeaderComponents/NavBar";
-import SocialLinks from "./HeaderComponents/SocialLinks";
+import Credits from "./Credits";
+import NavBar from "./NavBar";
+import SocialLinks from "./SocialLinks";
 
 const Header = () => {
     const [activeItem, setActiveItem] = useState<string>('Home');
