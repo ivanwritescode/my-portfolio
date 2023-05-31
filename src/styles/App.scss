@@ -502,6 +502,60 @@ section {
     }
 }
 
+.contact .info-box {
+    color: #444;
+    padding: 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+
+    i.icon {
+        font-size: 24px;
+        color: #18d25e;
+        border-radius: 50%;
+        padding: 14px;
+        float: left;
+        line-height: 1;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    h3 {
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 700;
+        margin: 18px 0 8px 68px;
+    }
+
+    p {
+        padding: 0;
+        color: #fff;
+        line-height: 24px; 
+        font-size: 14px;
+        margin: 0 0 0 68px;
+    }
+
+    .social-links {
+        margin: 5px 0 0 68px;
+        display: flex;
+
+        a {
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            fill: #fff;
+            line-height: 1;
+            width: 40px;
+            height: 40px;
+
+            &:hover {
+                color: #18d26e;
+                fill: #18d26e;
+            }
+        }
+    }
+}
+
 @media (max-width: 992px) {
     #header {
         h1 {

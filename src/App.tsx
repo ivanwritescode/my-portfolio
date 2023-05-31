@@ -7,6 +7,7 @@ import About from './Components/About'
 import { useState } from 'react'
 import UnderDevelopment from './Components/UnderDevelopment'
 import Resume from './Components/Resume'
+import Contact from './Components/Contact'
 
 function App() {
   const [activeItem, setActiveItem] = useState<string>('Home');
@@ -21,7 +22,7 @@ function App() {
       <Resume isShown={ activeItem === "Resume" } />
       <UnderDevelopment isShown={ activeItem == "Services"} />
       <UnderDevelopment isShown={ activeItem == "Portfolio"} />
-      <UnderDevelopment isShown={ activeItem == "Contact"} />
+      <Contact isShown={ activeItem == "Contact"} />
     </>
   )
 }
