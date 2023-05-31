@@ -1,4 +1,4 @@
-[Click here](https://example.com) to visit the website.
+[Click here](https://ivanwritescode.github.io/my-portfolio/) to visit the website.
 
 ## Installation
 
