@@ -31,8 +31,59 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
+#underdevelopment {
+    * {
+        transition: ease-in-out 0.3s;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        i.development-icon {
+            font-size: 10em
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 35px;
+        }
+    }
+}
+
 @media (min-width: 1024px) {
     body::before {
         background-attachment: fixed;
+    }
+}
+
+@media (max-width: 991px) {
+    #underdevelopment {
+        .container {
+            padding: 10px;
+        } 
+
+        i.development-icon {
+            font-size: 7em !important;
+        }
+
+        h2 {
+            font-size: 1.5em !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #underdevelopment {
+        i.development-icon {
+            font-size: 4em !important;
+        }
+
+        h2 {
+            font-size: .7em !important;
+        }
     }
 }

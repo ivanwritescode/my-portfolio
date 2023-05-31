@@ -1,8 +1,17 @@
-const UnderDevelopment = () => {
+import { ISectionProps } from "../common/interfaces";
+
+const UnderDevelopment = ({ isShown }: ISectionProps) => {
+    const getClassName = () =>
+        isShown ? "section-show" : "";
+
     return (
-        <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh'}}>
-            <h2> 🚧 Currently Under Development 🚧</h2>
-        </div>
+        <section id="underdevelopment" className={getClassName()}>
+            <div className="container">
+                <i className="ri-tools-line development-icon"></i>
+                <h2> 🚧 Currently Under Development 🚧</h2>
+            </div>
+        </section>
+
     )
 }
 

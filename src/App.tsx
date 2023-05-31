@@ -19,9 +19,9 @@ function App() {
       <Header activeItem={ activeItem } handleClick={ handleHeaderClick } />
       <About isShown={ activeItem === "About" } /> 
       <Resume isShown={ activeItem === "Resume" } />
-      { activeItem == "Services" && <UnderDevelopment /> } 
-      { activeItem == "Portfolio" && <UnderDevelopment /> } 
-      { activeItem == "Contact" && <UnderDevelopment /> } 
+      <UnderDevelopment isShown={ activeItem == "Services"} />
+      <UnderDevelopment isShown={ activeItem == "Portfolio"} />
+      <UnderDevelopment isShown={ activeItem == "Contact"} />
     </>
   )
 }
