@@ -6,6 +6,7 @@ import Header from './Components/Header'
 import About from './Components/About'
 import { useState } from 'react'
 import UnderDevelopment from './Components/UnderDevelopment'
+import Resume from './Components/Resume'
 
 function App() {
   const [activeItem, setActiveItem] = useState<string>('Home');
@@ -17,7 +18,7 @@ function App() {
     <>
       <Header activeItem={ activeItem } handleClick={ handleHeaderClick } />
       <About isShown={ activeItem === "About" } /> 
-      { activeItem == "Resume" && <UnderDevelopment /> } 
+      <Resume isShown={ activeItem === "Resume" } />
       { activeItem == "Services" && <UnderDevelopment /> } 
       { activeItem == "Portfolio" && <UnderDevelopment /> } 
       { activeItem == "Contact" && <UnderDevelopment /> } 

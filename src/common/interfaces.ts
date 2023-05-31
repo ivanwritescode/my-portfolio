@@ -3,3 +3,7 @@ export interface INavbarItem {
     link: string;
     disabled: boolean;
 }
+
+export interface ISectionProps {
+    isShown: boolean
+}

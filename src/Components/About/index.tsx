@@ -3,12 +3,9 @@ import AboutSection from "./AboutSection";
 import SkillsSection from "./SkillsSection";
 import InterestsSection from "./InterestsSection";
 import QuotesSection from "./QuotesSection";
+import { ISectionProps } from "../../common/interfaces";
 
-interface IAboutProps {
-    isShown: boolean
-}
-
-const About = ({ isShown }: IAboutProps) => {
+const About = ({ isShown }: ISectionProps) => {
     const getClassName = () =>
         isShown ? "section-show" : "";
 
