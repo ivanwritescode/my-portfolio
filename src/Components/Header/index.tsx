@@ -1,4 +1,3 @@
-import Credits from "./Credits";
 import NavBar from "./NavBar";
 import SocialLinks from "./SocialLinks";
 
@@ -34,7 +33,6 @@ const Header = ({activeItem, handleClick }: IHeaderProps) => {
                     <SocialLinks />
                 </div>
             </header>
-            {/* <Credits /> */}
         </>
     )
 }
