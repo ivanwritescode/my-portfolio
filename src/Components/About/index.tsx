@@ -4,9 +4,16 @@ import SkillsSection from "./SkillsSection";
 import InterestsSection from "./InterestsSection";
 import QuotesSection from "./QuotesSection";
 
-const About = () => {
+interface IAboutProps {
+    activeItem: string
+}
+
+const About = ({ activeItem }: IAboutProps) => {
+    const getClassName = () =>
+        activeItem === "About" ? "section-show" : "";
+
     return (
-        <section id="about" className="section-show">
+        <section id="about" className={ getClassName() }>
             <AboutSection />
             <TraitsSection />
             <SkillsSection />
