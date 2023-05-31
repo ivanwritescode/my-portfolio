@@ -5,12 +5,12 @@ import InterestsSection from "./InterestsSection";
 import QuotesSection from "./QuotesSection";
 
 interface IAboutProps {
-    activeItem: string
+    isShown: boolean
 }
 
-const About = ({ activeItem }: IAboutProps) => {
+const About = ({ isShown }: IAboutProps) => {
     const getClassName = () =>
-        activeItem === "About" ? "section-show" : "";
+        isShown ? "section-show" : "";
 
     return (
         <section id="about" className={ getClassName() }>
