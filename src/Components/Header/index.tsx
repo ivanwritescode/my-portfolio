@@ -34,7 +34,7 @@ const Header = ({activeItem, handleClick }: IHeaderProps) => {
                     <SocialLinks />
                 </div>
             </header>
-            <Credits />
+            {/* <Credits /> */}
         </>
     )
 }
