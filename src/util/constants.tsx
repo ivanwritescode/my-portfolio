@@ -81,6 +81,7 @@ export const interests = [
     { name: "Digital Art", icon: <i className="ri-palette-line" style={{ color: "#b20969" }}></i> },
     { name: "World History", icon: <i className="ri-ancient-gate-fill" style={{ color: "#e3d312" }}></i> },
     { name: "Space", icon: <i className="ri-planet-line" style={{ color: "#3163cc" }}></i> },
+    { name: "Human Psychology", icon: <i className="ri-brain-line" style={{ color: "#11dbcf" }}></i> }
 ]
 
 
