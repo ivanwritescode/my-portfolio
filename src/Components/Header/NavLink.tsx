@@ -1,9 +1,10 @@
 import { INavbarItem } from "../../common/interfaces";
+import { MouseEvent } from 'react';
 
 interface INavLinkProps {
     activeItem: string,
     item: INavbarItem,
-    onClick: (arg: string) => void 
+    onClick: (arg: string) => void
 }
 
 const NavLink = ({ activeItem, item, onClick }: INavLinkProps) => {
@@ -14,6 +15,12 @@ const NavLink = ({ activeItem, item, onClick }: INavLinkProps) => {
         textDecoration: 'line-through'
     }
 
+    const handleClick = (e: MouseEvent<HTMLLIElement>) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        onClick(item.label)
+    }
+
     const getLinkClass = (label: string): string => {
         const className = 'nav-link';
         return label === activeItem
@@ -22,7 +29,7 @@ const NavLink = ({ activeItem, item, onClick }: INavLinkProps) => {
     }
 
     return (
-        <li onClick={ () => onClick(item.label) }>
+        <li onClick={ handleClick }>
             <a className={ getLinkClass(item.label) }
                 style={ item.disabled ? disabledLinkStyles : {} }
                 href={ item.link }>{ item.label }</a>
