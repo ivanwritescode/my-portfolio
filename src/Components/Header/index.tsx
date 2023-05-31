@@ -11,7 +11,7 @@ const Header = ({activeItem, handleClick }: IHeaderProps) => {
         { label: 'Home', link: '#header', disabled: false },
         { label: 'About', link: '#about', disabled: false },
         { label: 'Resume', link: '#resume', disabled: false },
-        { label: 'Services', link: '#services', disabled: false },
+        // { label: 'Services', link: '#services', disabled: false },
         { label: 'Portfolio', link: '#portfolio', disabled: false },
         { label: 'Contact', link: '#contact', disabled: false },
     ];
