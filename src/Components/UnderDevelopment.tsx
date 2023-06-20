@@ -8,7 +8,8 @@ const UnderDevelopment = ({ isShown }: ISectionProps) => {
         <section id="underdevelopment" className={getClassName()}>
             <div className="container">
                 <i className="ri-tools-line development-icon"></i>
-                <h2> 🚧 Currently Under Development 🚧</h2>
+                <h2> 🚧 Work in progress. 🚧</h2>
+                <p>Please check my <a href="https://github.com/ivanwritescode">GitHub</a> for my projects</p>
             </div>
         </section>
 
