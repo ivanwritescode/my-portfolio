@@ -24,10 +24,10 @@ npm run dev
 
 This project utilizes the following technologies:
 
-1. React - A JavaScript library for building user interfaces. Visit [React](https://react.dev/) for more information.
-2. Bootstrap - A popular CSS framework for building responsive and mobile-first websites. Visit [Bootstrap](https://getbootstrap.com/) for more information.
-3. React Icons - A collection of customizable icons for React applications. Visit [React Icons](https://react-icons.github.io/react-icons/) for more information.
-4. TypeScript - A typed superset of JavaScript that compiles to plain JavaScript. Visit [TypeScript](https://www.typescriptlang.org/) for more information.
-5. SASS - A CSS extension language that adds features like variables, nesting, and mixins. Visit [SASS](https://sass-lang.com/documentation/syntax) for more information.
-6. Vite - A fast and lightweight development server and build tool for modern web applications. Visit [Vite](https://vitejs.dev/) for more information.
-7. Swiper - A modern, accessible, and customizable carousel library. Visit [Swiper](https://swiperjs.com/) for more information.
+1. [React](https://react.dev/) - A JavaScript library for building user interfaces.
+2. [Bootstrap](https://getbootstrap.com/) - A popular CSS framework for building responsive and mobile-first websites.
+3. [React Icons](https://react-icons.github.io/react-icons/) - A collection of customizable icons for React applications.
+4. [TypeScript](https://www.typescriptlang.org/) - A typed superset of JavaScript that compiles to plain JavaScript.
+5. [SASS](https://sass-lang.com/documentation/syntax) - A CSS extension language that adds features like variables, nesting, and mixins.
+6. [Vite](https://vitejs.dev/) - A fast and lightweight development server and build tool for modern web applications.
+7. [Swiper](https://swiperjs.com/) - A modern, accessible, and customizable carousel library.
