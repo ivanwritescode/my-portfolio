@@ -36,7 +36,7 @@ const Resume = ( {isShown}: ISectionProps) => {
                         <h3 className="resume-title">Professional Experience</h3>
                         <div className="resume-item pg-0">
                             <h4>Junior Web Developer</h4>
-                            <h5>2020 - 2022</h5>
+                            <h5>2021 - 2022</h5>
                             <p><em>Kreloses PLT, WFH</em></p>
                             <ul>
                             <li>Worked on localization of the Kreloses cloud-based business management software’s features like calendars, invoices, customers, services, and products.</li>
