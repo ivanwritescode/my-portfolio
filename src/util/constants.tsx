@@ -87,7 +87,6 @@ export const interests = [
 
 
 export const skills = [
-    { name: "GitHub and Git Version Control", proficiency: 70 },
     { name: "HTML", proficiency: 90 },
     { name: "CSS", proficiency: 70 },
     { name: "SASS/SCSS", proficiency: 70 },
@@ -96,15 +95,16 @@ export const skills = [
     { name: "Material-UI", proficiency: 50 },
     { name: "React", proficiency: 90 },
     { name: "Redux", proficiency: 90 },
+    { name: "AJAX, socket.io, async/await, and axios", proficiency: 80 },
+    { name: "npm, webpack, and babel", proficiency: 90 },
     { name: "Next.js", proficiency: 70 },
     { name: "Node.js, GraphQL", proficiency: 40 },
-    { name: "AJAX, socket.io, async/await, and axios", proficiency: 80 },
+    { name: "GitHub and Git Version Control", proficiency: 70 },
+    { name: "Github Actions CI/CD", proficiency: 40 },
+    { name: "Figma", proficiency: 70 },
+    { name: "Photoshop and Adobe Illustrator", proficiency: 60 },
     { name: "Web Security", proficiency: 40 },
     { name: "PHP, MySQL, Apache backend", proficiency: 60 },
-    { name: "Github Actions CI/CD", proficiency: 40 },
-    { name: "npm, webpack, and babel", proficiency: 90 },
-    { name: "Photoshop and Adobe Illustrator", proficiency: 60 },
-    { name: "Figma", proficiency: 70 },
     { name: "GitLab", proficiency: 30 },
     { name: "TeamCity CI/CD", proficiency: 30 },
 ] 
