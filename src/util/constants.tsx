@@ -97,7 +97,7 @@ export const skills = [
     { name: "React", proficiency: 90 },
     { name: "Redux", proficiency: 90 },
     { name: "Next.js", proficiency: 70 },
-    { name: "Node.js", proficiency: 40 },
+    { name: "Node.js, GraphQL", proficiency: 40 },
     { name: "AJAX, socket.io, async/await, and axios", proficiency: 80 },
     { name: "Web Security", proficiency: 40 },
     { name: "PHP, MySQL, Apache backend", proficiency: 60 },
