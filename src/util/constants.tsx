@@ -105,6 +105,7 @@ export const skills = [
     { name: "Photoshop and Adobe Illustrator", proficiency: 60 },
     { name: "Web Security", proficiency: 40 },
     { name: "PHP, MySQL, Apache backend", proficiency: 60 },
+    { name: "Linux and Linux Comand Line", proficiency: 70 },
     { name: "GitLab", proficiency: 30 },
     { name: "TeamCity CI/CD", proficiency: 30 },
 ] 
