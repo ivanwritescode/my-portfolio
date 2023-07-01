@@ -35,7 +35,7 @@ const AboutSection = () => {
                         </div>
                     </div>
                     <p>
-                        I've previously worked for a remote SaaS Cloud Service platform based in Malaysia. This experience not only allowed me to gain considerable competencies in frontend development skills such as HTML, CSS, and JavaScript in React but also provided me with the opportunity to enhance my collaboration and communication skills in a remote work setting. Engaging in tasks such as localization assignments, resolving customer ticket issues, bug fixes, and feature additions, I developed the ability to collaborate with people professionally, even in a virtual environment.
+                        I've previously worked for a remote SaaS Cloud Service platform based in Malaysia. This experience not only allowed me to gain considerable competencies in web development skills such as HTML, CSS, JavaScript, React, and much more but also provided me with the opportunity to enhance my collaboration and communication skills. Engaging in tasks such as localization assignments, resolving customer ticket issues, bug fixes, and feature additions, I developed the ability to collaborate with people professionally, even in a virtual environment.
                     </p>
                     <p>
                         These experiences have not only expanded my technical competencies but have also equipped me with the necessary skills to work effectively and efficiently as part of a remote team. I am confident in my ability to adapt to different work environments and contribute positively to your organization's success.
